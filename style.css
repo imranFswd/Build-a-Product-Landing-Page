@@ -1,0 +1,270 @@
+/*==========================================
+ *  common css area start 
+ */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: Lato, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container {
+  max-width: 62.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+:root {
+  --color-white-eee: #eeeeee;
+  --color-black: #000000;
+  --color-black-222: #222222;
+  --color-gray-ddd: #dddddd;
+  --color-yellow-f1c40f: #f1c40f;
+  --color-orange-FF8C00: #ff8c00;
+}
+body {
+  background: var(--color-white-eee);
+}
+
+/*==========================================
+ *  header area start 
+ */
+
+/* header top start */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 1rem 4%;
+}
+.logo a {
+  color: var(--color-black-222);
+  text-decoration: none;
+  font-size: 2rem;
+}
+nav.nav-area ul {
+  display: flex;
+}
+nav.nav-area ul li {
+  list-style: none;
+}
+nav.nav-area ul li a {
+  text-decoration: none;
+  padding: 1rem;
+  text-transform: capitalize;
+  color: var(--color-black-222);
+}
+
+/* header bottom start */
+.header-bottom {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 3rem auto 6rem auto;
+}
+form.header-bottom-form {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  max-width: 22rem;
+  width: 100%;
+}
+input#email-address {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  display: block;
+}
+input#submit-btn {
+  padding: 0.4rem;
+  background: var(--color-yellow-f1c40f);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: right;
+  width: 8.8rem;
+  border: 0;
+  font-family: Lato, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px var(--color-black-222);
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 0.125rem;
+}
+input#submit-btn:hover {
+  background: var(--color-orange-FF8C00);
+  transition: all 2s;
+  box-shadow: 0px 0px 2px var(--color-black-222);
+}
+
+/*==========================================
+ *  main area start 
+ */
+#main-area section {
+  min-height: 60vh;
+}
+.features-area-title,
+.how-it-works-area-title,
+.pricing-area-title{
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.features-area-title h1{
+  border-bottom: 4px solid var(--color-yellow-f1c40f);
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+}
+.how-it-works-area-title h1,
+.pricing-area-title h1{
+  border-bottom: 4px solid var(--color-orange-FF8C00);
+  margin-bottom: 3rem;
+  padding-bottom: .5rem;
+}
+
+/* features area start */
+.premium-materials,
+.fast-shipping,
+.quality-assurance {
+  display: flex;
+}
+
+.premium-materials-icon,
+.fast-shipping-icon,
+.quality-assurance-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+}
+.icon-color-FF8C00 {
+  color: var(--color-orange-FF8C00);
+}
+.premium-materials-details,
+.fast-shipping-details,
+.quality-assurance-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+.premium-materials-details h2,
+.fast-shipping-details h2,
+.quality-assurance-details h2 {
+  font-size: 1.5rem;
+}
+
+/* how it works area start */
+.how-it-works-area-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* pricing area start */
+.pricing-area-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid var(--color-black);
+  border-radius: 3px;
+}
+.product-label{
+  background: var(--color-gray-ddd);
+  width: 100%;
+  padding: .8rem;
+}
+.product-label h2{
+  font-size: 1.125rem;
+}
+.product-desc h1{
+  padding: 1rem;
+}
+.product-desc ul li{
+  list-style: none;
+  line-height: 2rem;
+}
+.product-desc button{
+  background: var(--color-yellow-f1c40f);
+  border: none;
+  padding: .75rem 1.5rem;
+  font-weight: 600;
+  margin: 2rem auto 1.125rem auto;
+}
+.product-desc button:hover{
+  cursor: pointer;
+  background: var(--color-orange-FF8C00);
+  transition: .3s;
+}
+
+/*==========================================
+ *  footer area start 
+ */
+
+.footer-area-wrapper {
+  text-align: right;
+  background: var(--color-gray-ddd);
+  padding: 1.5rem 1.125rem 2rem;
+  letter-spacing: 1px;
+  margin-top: 4rem;
+}
+
+/* footer top area start */
+.footer-top {
+  padding-right: 0.5rem;
+}
+.footer-top ul {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  gap: 1rem;
+}
+.footer-top ul li {
+  list-style: none;
+}
+.footer-top ul li a {
+  text-decoration: none;
+  color: var(--color-black-222);
+}
+.footer-top ul li a:hover {
+  color: var(--color-black);
+  transition: 0.3s;
+}
+
+/* footer bottom area start */
+.footer-bottom {
+  margin-top: 0.4rem;
+}
+.footer-bottom p a{
+  color: var(--color-black-222);
+  text-decoration: none;
+}
+.footer-bottom p a:hover{
+  color: var(--color-black-222);
+  transition: .3s;
+}
+
+
+
+
+
+
+
+
+/* End of CSS */
